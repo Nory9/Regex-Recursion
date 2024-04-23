@@ -6,19 +6,22 @@
 characters (no numbers and symbols) and it should end with capital A else return false */
 
 function capitalA(s){
+    let regex= /[a-zA-Z]*A$/g;
     // Add your logic.
-    return;
+    return regex.test(s);
 }
+
 
 
 /* Write a function that take a string and return true if the the sting is following the emails pattern
 which end with io (example@example.io) */
 
 function ioEmail(email){
+    let regex = /^[a-zA-Z]+@{1}[a-zA-Z]+.io/
+    return regex.test(email)
     // Add your logic.
-    return;
+   // return;
 }
-
 /* You have a text that contain image names with their extention you need to write a function to 
 find all images in that text and return their names and extention in an array 
 
