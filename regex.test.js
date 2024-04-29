@@ -31,9 +31,12 @@ required extention are jpg, jpeg and png.
 
 function imagesSearcher(text){
     let arr = [];
-    let regex = /\w+.(jpg|jpeg|png)/ig;
+    let regex = /\w+.{1}(jpg|jpeg|png)/ig;
     arr= text.match(regex);
-    return arr
+    if(arr!==null)
+      return arr
+    else 
+      return [];
 }
 
 
